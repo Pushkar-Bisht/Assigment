@@ -1,0 +1,38 @@
+{
+  "restaurant": [
+    {
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "address": "test1",
+      "id": 1
+    },
+    {
+      "name": "test2",
+      "email": "test2@gmail.com",
+      "address": "test2",
+      "id": 2
+    },
+    {
+      "name": "test3",
+      "email": "test3@gmail.com",
+      "address": "test3",
+      "id": 3
+    },
+    {
+      "name": "test3",
+      "email": "test4@gmail.com",
+      "address": "test4",
+      "id": 4
+    }
+  ],
+  "Signup": [
+    {
+      "firstname": "Rahul",
+      "lastname": "Bisht",
+      "email": "pushkar@gmail.com",
+      "password": "1234",
+      "address": "Kashipur",
+      "id": 5
+    }
+  ]
+}
