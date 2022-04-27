@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormGroup,FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { SignupService } from '../signup.service';
 
 @Component({
   selector: 'app-login',
@@ -14,12 +15,12 @@ LoginForm=new FormGroup({
   email:new FormControl(''),
   password:new FormControl('')
 })
-  constructor(private http:HttpClient,private router:Router) { }
+  constructor(private http:HttpClient,private router:Router,private service:SignupService) { }
 
   ngOnInit(): void {
   }
   login(){
-    this.http.get<any>("http://localhost:3000/Signup").subscribe(res=>{
+    this.service.getdata().subscribe(res=>{
       const user=res.find((a:any)=>{
         return a.email===this.LoginForm.value.email && a.password===this.LoginForm.value.password
       });
